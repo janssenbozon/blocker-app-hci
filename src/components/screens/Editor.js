@@ -10,24 +10,18 @@ function Editor() {
   return (
     <div id="container">
       <div id="title">
-        <div>Formation {index + 1}:</div>
-        <div style={{ height: "50px" }}>
+        <b style={{fontSize: "20px", fontWeight: "normal"}}>Formation {index + 1}:</b>
+        <div style={{ display: "flex", height: "50px", alignItems: "center", justifyContent:"center",}}>
           <button
             onClick={() => {
               if (index > 0) {
                 setIndex(index - 1);
               }
             }}
-            style={{
-              display: "inline-block",
-              marginTop: "10px",
-            }}
           >
             <img style={{ width: "30px", rotate: "180deg" }} src={arrow}></img>
           </button>
-          <div style={{ display: "inline-block" }}>
-            <b>{formations[index].name}</b>
-          </div>
+          <b>{formations[index].name}</b>
           <button
             onClick={() => {
               if (index + 1 < formations.length) {

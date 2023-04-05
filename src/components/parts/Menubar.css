@@ -1,7 +1,12 @@
 .menuContainter {
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  width: 100%;
+  width: 80%;
   height: 100px;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
 }
 button {
   outline: none;

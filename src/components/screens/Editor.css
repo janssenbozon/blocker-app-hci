@@ -1,7 +1,10 @@
 #container {
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
   background-color: #393940;
   width: 100%;
-  height: 1700px;
+  height: 1020px;
 }
 #title {
   padding-top: 10px;
