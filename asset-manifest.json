@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/blocker-app-hci/static/css/main.b48894f6.css",
+    "main.js": "/blocker-app-hci/static/js/main.873552e9.js",
+    "static/js/787.8e8d2af1.chunk.js": "/blocker-app-hci/static/js/787.8e8d2af1.chunk.js",
+    "index.html": "/blocker-app-hci/index.html",
+    "main.b48894f6.css.map": "/blocker-app-hci/static/css/main.b48894f6.css.map",
+    "main.873552e9.js.map": "/blocker-app-hci/static/js/main.873552e9.js.map",
+    "787.8e8d2af1.chunk.js.map": "/blocker-app-hci/static/js/787.8e8d2af1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b48894f6.css",
+    "static/js/main.873552e9.js"
+  ]
+}
