@@ -50,7 +50,7 @@ function Menubar(props) {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <button
           onClick={() => {
-            props.setcreateActive(true);
+            props.createDancer();
           }}
         >
           <img style={{ width: "35px" }} src={plus}></img>
@@ -66,13 +66,13 @@ function Menubar(props) {
         >
           <img style={{ width: "35px" }} src={dancer}></img>
         </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>12 dancers</p>
+        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>{props.formations[props.index].dancers.length} dancers</p>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column" }}>
         <button
           onClick={() => {
-            props.setcreateActive(true);
+            props.removeDancer();
           }}
         >
           <img style={{ width: "35px" }} src={minus}></img>
