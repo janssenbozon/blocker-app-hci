@@ -5,7 +5,7 @@ function Create(props) {
   const [name, setName] = useState("");
   const submit = () => {
     if (name.length >= 1) {
-      props.setFormations([...props.formations, { name: name }]);
+      props.setFormations([...props.formations, { name: name, dancers: [] }]);
       props.setcreateActive(false);
       props.setIndex(props.formations.length);
     } else {
