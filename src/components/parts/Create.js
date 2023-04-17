@@ -3,15 +3,53 @@ import "./Create.css";
 
 function Create(props) {
   const [name, setName] = useState("");
+  const [checked, setChecked] = useState(false);
+  const [previous, setPrevious] = useState(false);
+
+  const handleChange = () => {
+    setChecked(!checked);
+    setPrevious(false);
+  };
+
+  const handleChange2 = () => {
+    setPrevious(!previous);
+    setChecked(false);
+  };
+
   const submit = () => {
+    let temp = props.formations[props.index];
+    console.log(temp);
+    let tempdancer = JSON.parse(JSON.stringify(temp.dancers));
+
     if (name.length >= 1) {
-      props.setFormations([...props.formations, { name: name, dancers: [] }]);
-      props.setcreateActive(false);
-      props.setIndex(props.formations.length);
+      if (checked) {
+        for (let i of tempdancer) {
+          i.x = 0;
+          i.y = 0;
+        }
+        props.setFormations([
+          ...props.formations,
+          { name: name, dancers: tempdancer },
+        ]);
+        props.setcreateActive(false);
+        props.setIndex(props.formations.length);
+      } else if (previous) {
+        props.setFormations([
+          ...props.formations,
+          { name: name, dancers: tempdancer },
+        ]);
+        props.setcreateActive(false);
+        props.setIndex(props.formations.length);
+      } else {
+        props.setFormations([...props.formations, { name: name, dancers: [] }]);
+        props.setcreateActive(false);
+        props.setIndex(props.formations.length);
+      }
     } else {
       alert("Enter a name");
     }
   };
+
   return props.createActive ? (
     <div className="createContainter">
       <div className="createForm">
@@ -40,11 +78,31 @@ function Create(props) {
               <br></br>
               Select One:
               <br></br>
-              <input type="checkbox"></input>
-              <label>Start with all dancers off stage</label>
+              <input
+                type="checkbox"
+                checked={checked}
+                onChange={handleChange}
+              ></input>
+              <label
+                onClick={() => {
+                  handleChange();
+                }}
+              >
+                Start with all dancers off stage
+              </label>
               <br></br>
-              <input type="checkbox"></input>
-              <label>Start with previous formation</label>
+              <input
+                type="checkbox"
+                checked={previous}
+                onChange={handleChange2}
+              ></input>
+              <label
+                onClick={() => {
+                  handleChange2();
+                }}
+              >
+                Start with previous formation
+              </label>
             </div>
           </form>
           <br></br>

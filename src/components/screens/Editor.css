@@ -1,6 +1,5 @@
 #container {
   background-color: #393940;
-  height: 1700px;
 }
 #title {
   padding-top: 10px;
@@ -12,10 +11,10 @@
   margin: auto;
   margin-top: 10px;
   width: 1484px;
-  height: 700px;
+  height: 600px;
   text-align: center;
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   position: relative;
   padding: 10px;
 }

@@ -11,19 +11,12 @@ function Editor() {
       name: "Triangle",
       dancers: [],
     },
-    {
-      name: "Circle",
-      dancers: [],
-    },
   ]);
 
   const [index, setIndex] = useState(0);
   const [createActive, setcreateActive] = useState(false);
 
   let dancerStack = [];
-  useEffect(() => {
-    console.log("hi");
-  }, [formations]);
 
   for (let i of formations[index].dancers) {
     dancerStack.push(
@@ -107,6 +100,7 @@ function Editor() {
         setFormations={setFormations}
         formations={formations}
         setIndex={setIndex}
+        index={index}
       />
     </div>
   );

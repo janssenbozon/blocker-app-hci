@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Dancer.css";
 const DraggableComponent = (props) => {
-  console.log(props.x);
   const [pos, setPos] = useState({ left: props.x, top: props.y });
 
   const [isDragging, setDragging] = useState(false);
@@ -61,7 +60,6 @@ const DraggableComponent = (props) => {
   }
 
   useEffect(() => {
-    console.log(props.index);
     document.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseup", onMouseUp);
   }, []);
