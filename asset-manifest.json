@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blocker-app-hci/static/css/main.b4fd4416.css",
-    "main.js": "/blocker-app-hci/static/js/main.d70732ac.js",
+    "main.css": "/blocker-app-hci/static/css/main.22acf804.css",
+    "main.js": "/blocker-app-hci/static/js/main.5a3d356b.js",
     "static/js/787.8e8d2af1.chunk.js": "/blocker-app-hci/static/js/787.8e8d2af1.chunk.js",
     "index.html": "/blocker-app-hci/index.html",
-    "main.b4fd4416.css.map": "/blocker-app-hci/static/css/main.b4fd4416.css.map",
-    "main.d70732ac.js.map": "/blocker-app-hci/static/js/main.d70732ac.js.map",
+    "main.22acf804.css.map": "/blocker-app-hci/static/css/main.22acf804.css.map",
+    "main.5a3d356b.js.map": "/blocker-app-hci/static/js/main.5a3d356b.js.map",
     "787.8e8d2af1.chunk.js.map": "/blocker-app-hci/static/js/787.8e8d2af1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4fd4416.css",
-    "static/js/main.d70732ac.js"
+    "static/css/main.22acf804.css",
+    "static/js/main.5a3d356b.js"
   ]
 }
