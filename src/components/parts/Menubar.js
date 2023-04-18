@@ -20,31 +20,9 @@ function Menubar(props) {
             props.setcreateActive(true);
           }}
         >
-          <img style={{ width: "35px" }} src={lock}></img>
+          <img style={{ width: "35px" }} src={add}></img>
         </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Lock form</p>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <button
-          onClick={() => {
-            props.setcreateActive(true);
-          }}
-        >
-          <img style={{ width: "35px" }} src={undo}></img>
-        </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Undo</p>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <button
-          onClick={() => {
-            props.setcreateActive(true);
-          }}
-        >
-          <img style={{ width: "35px" }} src={redo}></img>
-        </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Redo</p>
+        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Create form</p>
       </div>
 
       <div style={{ display: "flex", flexDirection: "column" }}>
@@ -90,29 +68,6 @@ function Menubar(props) {
         </button>
         <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Suggested form</p>
       </div>
-
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <button
-          onClick={() => {
-            props.setcreateActive(true);
-          }}
-        >
-          <img style={{ width: "35px" }} src={add}></img>
-        </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Create form</p>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <button
-          onClick={() => {
-            props.setcreateActive(true);
-          }}
-        >
-          <img style={{ width: "35px" }} src={note}></img>
-        </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Add note</p>
-      </div>
-
     </div>
   );
 }
