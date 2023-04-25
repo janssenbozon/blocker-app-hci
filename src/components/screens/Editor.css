@@ -38,6 +38,9 @@
   border-width: 5px;
   border-color: white;
   border-style: solid;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 1px);
+  background-size: 24px 24px;
 }
 #offstageR {
   width: 182px;
