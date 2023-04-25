@@ -17,17 +17,6 @@ function Menubar(props) {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <button
           onClick={() => {
-            props.setcreateActive(true);
-          }}
-        >
-          <img style={{ width: "35px" }} src={add}></img>
-        </button>
-        <p style={{ color: "white", fontSize: "15px", fontWeight: "bold" }}>Create form</p>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <button
-          onClick={() => {
             props.createDancer();
           }}
         >

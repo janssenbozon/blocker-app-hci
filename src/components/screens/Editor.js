@@ -4,6 +4,7 @@ import Create from "../parts/Create";
 import "./Editor.css";
 import { useState, useEffect } from "react";
 import Dancer from "../parts/Dancer";
+import add from "../../assets/add.png"
 function Editor() {
   //
   const [formations, setFormations] = useState([
@@ -51,6 +52,11 @@ function Editor() {
       <div id="title">
         <div>Formation {index + 1}:</div>
         <div style={{ height: "50px" }}>
+          <div style={{ display: "inline-block" }}>
+            <b>{formations[index].name}</b>
+          </div>
+          
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignContent: "center"}}>
           <button
             onClick={() => {
               if (index > 0) {
@@ -59,15 +65,18 @@ function Editor() {
             }}
             style={{
               display: "inline-block",
-              marginTop: "10px",
             }}
           >
             <img style={{ width: "30px", rotate: "180deg" }} src={arrow}></img>
           </button>
-          <div style={{ display: "inline-block" }}>
-            <b>{formations[index].name}</b>
-          </div>
-          <button
+            <button
+              onClick={() => {
+                setcreateActive(true);
+              }}
+            >
+              <img style={{ width: "30px" }} src={add}></img>
+            </button>
+            <button
             onClick={() => {
               if (index + 1 < formations.length) {
                 setIndex(index + 1);
@@ -77,6 +86,7 @@ function Editor() {
           >
             <img style={{ width: "30px" }} src={arrow}></img>
           </button>
+          </div>
         </div>
       </div>
 
